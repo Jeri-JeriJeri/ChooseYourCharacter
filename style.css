@@ -6,14 +6,14 @@ body  {
   background: radial-gradient(circle,rgba(200, 179, 246, 1) 0%, rgba(117, 70, 232, 1) 100%);
   color: #2D1C7F ;
   font-family: "Syncopate", sans-serif;
-  overflow: hidden;
+  
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  height: 80vh;
+  height: 76dvh;
   
 }
 
@@ -38,16 +38,16 @@ body  {
 .char-flexbox {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 2rem;
+  padding-top: 2rem; 
 }
 .char-flexbox img {
   width: 250px;
   height: 240px;
 }
 .chars {
-  border: 2px solid black;
+ /*  border: 2px solid black; */
   transform: skewX(-5deg);
-  transition: transform 0.9s, border 0.9s, box-shadow 0.9s;
+  transition: transform 0.5s, border 0.9s, box-shadow 0.9s;
 }
 .chars:hover {
   transform: skewX(0deg);
@@ -63,43 +63,6 @@ body  {
   to {
     transform: skew();
   }
-}
-.gohan-container {
-  width: 100dvw;
-  height: 100dvh; 
-  display: grid;
-  grid-template-columns: 1fr 250px 1fr; 
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "info empty picture" "graph empty accomps";
-}
-.gohan-container h1 {
-  font-size: 3rem;
-}
-.gohan-container h2 {
-  font-size: 2rem;
-  text-align: center;
-}
-.gohan-container p, li {
-  font-size: 1.3rem;
-}
-.gohan-container li {
-  border: 1px solid black;
-  border-radius: 4px;
-  margin-bottom: 2rem;
-}
-
-.info {
-  grid-area: info;
-
-}
-.picture{
-  grid-area: picture;
-}
-.graph {
-  grid-area: graph;
-}
-.accomps {
-  grid-area: accomps;
 }
 
 
