@@ -1,25 +1,31 @@
+body { 
+  background: radial-gradient(circle, #002424 0%, #000F0F 100%);
+  color: #68C7EC;  
+  font-family: "Cantarell", sans-serif;
+  
+
+}
+
 .container {
-  width: 100dvw;
-  height: 100dvh; 
+  width: 99dvw;
+  height: 98dvh; 
   display: grid;
   grid-template-columns: 1fr 250px 1fr; 
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "info empty picture" "graph empty accomps";
 }
 .container h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .container h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 .container p, li {
   font-size: 1.3rem;
 }
 .container li {
-  border: 1px solid black;
-  border-radius: 4px;
-  margin-bottom: 2rem;
+   margin-bottom: 2rem; 
 }
 
 .info {
