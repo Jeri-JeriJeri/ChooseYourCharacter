@@ -6,6 +6,7 @@ body  {
   background: radial-gradient(circle,rgba(200, 179, 246, 1) 0%, rgba(117, 70, 232, 1) 100%);
   color: #2D1C7F ;
   font-family: "Syncopate", sans-serif;
+  overflow: hidden;
 }
 
 .container {
@@ -63,6 +64,11 @@ body  {
     transform: skew();
   }
 }
+.gohan-container {
+  width: 100dvw;
+  height: 100dvh;
+}
+
 
 /* 
 ##### ATT GÖRA ######
