@@ -10,9 +10,17 @@
 
 6.Grizzly - AAAHHH
 
+
+///////////
 Onlick: play audio
 
+////////////////
+Anchor link:
+Info for the char
+Char pic
+Some kind of graph api idk :C
 
+/////////
 backend del: 
 1. Google trends API - Track how many times has it been googled for example tday/1month/year/all time
 
