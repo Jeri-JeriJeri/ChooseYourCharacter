@@ -63,12 +63,12 @@ body  {
   
   
 }
-#adam-smasher {
+#spiderman {
   grid-column: 2;
 
 }
 
-#david-martinez {
+#dorian {
     grid-column: 3;
   
  
@@ -79,25 +79,17 @@ body  {
  
   
 }
-#goku {
+#dean {
    grid-column: 5;
 }
   
-#vegeta {
+#grizzly {
   grid-column: 6; 
   }
-#asta {
-  grid-column: 7;
- 
-  
-}
 
-#guts {
-  grid-column: 8;
-}  
-#gohan, #adam-smasher, #david-martinez, #revanent, #goku, #vegeta, #asta, #guts {
+#gohan, #spiderman, #dorian, #revanent, #dean, #grizzly  {
   width: 70%;
-  height: 70%;
+  height: 80%;
    
 } 
 /* 
