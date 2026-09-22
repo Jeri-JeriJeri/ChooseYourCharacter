@@ -6,17 +6,17 @@
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "info empty picture" "graph empty accomps";
 }
-.gohan-container h1 {
+.container h1 {
   font-size: 3rem;
 }
-.gohan-container h2 {
+.container h2 {
   font-size: 2rem;
   text-align: center;
 }
-.gohan-container p, li {
+.container p, li {
   font-size: 1.3rem;
 }
-.gohan-container li {
+.container li {
   border: 1px solid black;
   border-radius: 4px;
   margin-bottom: 2rem;
