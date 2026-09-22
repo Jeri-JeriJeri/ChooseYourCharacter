@@ -54,6 +54,16 @@ body  {
   box-shadow: 3px 3px 15px 15px white;
 }
 
+@keyframes lockedChar-animation {
+  from {
+    transform: skew(-5deg, -10deg);
+   /*  box-shadow: 10px 10px 50px 50px white; */
+  }
+  to {
+    transform: skew();
+  }
+}
+
 /* 
 ##### ATT GÖRA ######
 Grid cleanup */
