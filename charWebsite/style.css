@@ -2,6 +2,7 @@ body {
   background: radial-gradient(circle, #002424 0%, #000F0F 100%);
   color: #68C7EC;  
   font-family: "Cantarell", sans-serif;
+  overflow: hidden;
   
 
 }
@@ -30,14 +31,141 @@ body {
 
 .info {
   grid-area: info;
+  animation: info-animation 1.5s;
+  animation-delay: 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 
 }
 .picture{
   grid-area: picture;
+  animation: picture-animation 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  
 }
 .graph {
   grid-area: graph;
+  animation: graph-animation 1.5s;
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 .accomps {
   grid-area: accomps;
+}
+.accomps h2 {
+  animation: accomps-animation 1.5s;
+  animation-delay: 0.9s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+ .accomps li {
+  opacity: 0;
+} 
+.list-1 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+.list-2 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  
+}
+.list-3 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
+.list-4 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 2.1s;
+  animation-fill-mode: forwards;
+}
+.list-5 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 2.4s;
+  animation-fill-mode: forwards;
+}
+.list-6 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 2.7s;
+  animation-fill-mode: forwards;
+}
+.list-7 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+/* ##################
+#### ANIMATIONS #####
+#################### */
+@keyframes info-animation {
+ 0% {
+    transform: translate(-20%);
+    opacity: 0;}
+  50% {
+
+    opacity: 0.4;
+  }
+  
+    100% {
+    transform: translate(0);
+    opacity: 1;
+    }
+}
+@keyframes picture-animation {
+ 0% {
+    transform: translate(20%);
+    opacity: 0;}
+  50% {
+
+    opacity: 0.4;
+  }
+  
+    100% {
+    transform: translate(0);
+    opacity: 1;
+    }
+}
+@keyframes graph-animation {
+ 0% {
+    transform: translate(-20%);
+    opacity: 0;}
+  50% {
+
+    opacity: 0.4;
+  }
+  
+    100% {
+    transform: translate(0);
+    opacity: 1;
+    }
+}
+@keyframes accomps-animation {
+ 0% {
+    transform: translate(20%);
+    opacity: 0;}
+  50% {
+
+    opacity: 0.4;
+  }
+  
+    100% {
+    transform: translate(0);
+    opacity: 1;
+    }
+}
+
+@keyframes accomps-li-animation {
+ 0% {
+    transform: translate(10%, -100%);
+    opacity: 0;}
+    100% {
+    transform: translate(0, 0);
+    opacity: 1;
+    }
 }
