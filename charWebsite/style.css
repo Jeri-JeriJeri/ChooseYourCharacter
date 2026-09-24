@@ -35,6 +35,7 @@ body {
   animation-delay: 0.3s;
   opacity: 0;
   animation-fill-mode: forwards;
+  padding-left: 1rem;
 
 }
 .picture{
@@ -42,8 +43,17 @@ body {
   animation: picture-animation 1.5s;
   opacity: 0;
   animation-fill-mode: forwards;
-  
+  align-items: center;
+  justify-self: center;
 }
+#dean-picture {
+  justify-self: right;
+}
+.picture img {
+  width: 1.2fr;
+  height: 40dvh;
+}
+
 .graph {
   grid-area: graph;
   animation: graph-animation 1.5s;
@@ -53,6 +63,7 @@ body {
 }
 .accomps {
   grid-area: accomps;
+   padding-right: 0.8rem; 
 }
 .accomps h2 {
   animation: accomps-animation 1.5s;

@@ -31,7 +31,7 @@ const quote = document.getElementById("audio");
 // # FIX DELAY##########################
 // # FIX VOLUME ON DORIAN AND GRIZZLY ##
 // #######################################
- function delayedAudio () {
+function delayedAudio () {
 setTimeout(playAudio, 750);
 
 function playAudio () {

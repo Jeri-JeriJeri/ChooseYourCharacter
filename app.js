@@ -15,7 +15,7 @@ const grizzly = document.getElementById("grizzly");
 
 
 gohan.addEventListener("mouseenter", () => {
-  lockedChar.src = "lockedChar/gohan.jpg";
+  lockedChar.src = "lockedChar/gohan.png";
   lockedChar.style.animation = "lockedChar-animation 2s";
 })
 gohan.addEventListener("mouseleave", () => {
@@ -24,7 +24,7 @@ gohan.addEventListener("mouseleave", () => {
 })
 
 spiderman.addEventListener("mouseenter", () => {
-  lockedChar.src = "lockedChar/spiderman.jpg";
+  lockedChar.src = "lockedChar/spiderman.png";
   lockedChar.style.animation = "lockedChar-animation 2s";
 })
 spiderman.addEventListener("mouseleave", () => {
@@ -34,7 +34,7 @@ spiderman.addEventListener("mouseleave", () => {
 
 
 dorian.addEventListener("mouseenter", () => {
-  lockedChar.src = "lockedChar/dorian.jpg";
+  lockedChar.src = "lockedChar/dorian.png";
   lockedChar.style.animation = "lockedChar-animation 2s";
 })
 dorian.addEventListener("mouseleave", () => {
@@ -44,7 +44,7 @@ dorian.addEventListener("mouseleave", () => {
 
 
 revanent.addEventListener("mouseenter", () => {
-  lockedChar.src = "lockedChar/revanent.jpg";
+  lockedChar.src = "lockedChar/revanent.png";
   lockedChar.style.animation = "lockedChar-animation 2s";
 })
 revanent.addEventListener("mouseleave", () => {
@@ -64,7 +64,7 @@ dean.addEventListener("mouseleave", () => {
 
 
 grizzly.addEventListener("mouseenter", () => {
-  lockedChar.src = "lockedChar/grizzly.jpg";
+  lockedChar.src = "lockedChar/grizzly.png";
   lockedChar.style.animation = "lockedChar-animation 2s";
 })
 grizzly.addEventListener("mouseleave", () => {
