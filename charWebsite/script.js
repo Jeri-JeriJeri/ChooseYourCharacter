@@ -31,8 +31,8 @@ const quote = document.getElementById("audio");
 // # FIX DELAY##########################
 // # FIX VOLUME ON DORIAN AND GRIZZLY ##
 // #######################################
-function delayedAudio () {
-setTimeout(playAudio, 550);
+ function delayedAudio () {
+setTimeout(playAudio, 750);
 
 function playAudio () {
   
@@ -63,3 +63,5 @@ else if (revenantID === "revenant") {
 else if (spidermanID === "spiderman") {
   delayedAudio();
 }
+ 
+
