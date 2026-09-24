@@ -31,9 +31,8 @@ const quote = document.getElementById("audio");
 // # FIX DELAY##########################
 // # FIX VOLUME ON DORIAN AND GRIZZLY ##
 // #######################################
-
-if (deanID === "dean") {
-setTimeout(playAudio, 400);
+function delayedAudio () {
+setTimeout(playAudio, 3000);
 
 function playAudio () {
   
@@ -41,43 +40,26 @@ function playAudio () {
 }
 }
 
-else if (dorianID === "dorian") {
-  setTimeout(playAudio, 11400);
-
-function playAudio () {
-  quote.play();
+if (deanID === "dean") {
+  delayedAudio();
 }
+
+else if (dorianID === "dorian") {
+  delayedAudio();
 }
 
 else if (gohanID === "gohan") {
-  setTimeout(playAudio, 400);
-
-function playAudio () {
-  quote.play();
-}
+  delayedAudio();
 }
 
 else if (grizzlyID === "grizzly") {
-  setTimeout(playAudio, 400);
-
-  function playAudio () {
-    
-    quote.play();
-  }
+  delayedAudio();
 }
 
 else if (revenantID === "revenant") {
-  setTimeout(playAudio, 400);
-
-function playAudio () {
-  quote.play();
-}
+ delayedAudio();
 }
 
 else if (spidermanID === "spiderman") {
-  setTimeout(playAudio, 400);
-
-function playAudio () {
-  quote.play();
-}
+  delayedAudio();
 }
