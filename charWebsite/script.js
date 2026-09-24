@@ -32,7 +32,7 @@ const quote = document.getElementById("audio");
 // # FIX VOLUME ON DORIAN AND GRIZZLY ##
 // #######################################
 function delayedAudio () {
-setTimeout(playAudio, 550);
+setTimeout(playAudio, 750);
 
 function playAudio () {
   
