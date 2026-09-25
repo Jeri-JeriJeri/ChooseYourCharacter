@@ -54,6 +54,7 @@ body {
 .picture img {
   width: 1.2fr;
   height: 40dvh;
+  border-radius: 20px;
 }
 
 .graph {

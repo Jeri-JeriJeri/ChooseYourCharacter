@@ -54,7 +54,7 @@ revanent.addEventListener("mouseleave", () => {
 
 
 dean.addEventListener("mouseenter", () => {
-  lockedChar.src = "lockedChar/dean.jpg";
+  lockedChar.src = "lockedChar/dean.png";
   lockedChar.style.animation = "lockedChar-animation 2s";
 })
 dean.addEventListener("mouseleave", () => {
