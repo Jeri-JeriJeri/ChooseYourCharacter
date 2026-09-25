@@ -1,8 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 body { 
   background: radial-gradient(circle, #002424 0%, #000F0F 100%);
   color: #68C7EC;  
   font-family: "Cantarell", sans-serif;
   overflow: hidden;
+  
   
 
 }
@@ -48,6 +52,8 @@ body {
 }
 #pos-right-picture {
   justify-self: right;
+  
+  
 }
 .picture img {
   width: 1.2fr;
