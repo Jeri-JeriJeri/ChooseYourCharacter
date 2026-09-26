@@ -22,6 +22,24 @@ spidermanID = "spiderman"
 
 const quote = document.getElementById("audio");
 
+let quoteShuffle = 0;
+let quoteText = {};
+const btn = document.getElementById("btn");
+
+fetch("quotes.json")
+.then(response => response.json())
+.then(data => {
+  quoteText = data;
+});
+btn.addEventListener("click", (char) => {
+  char = revenantID
+  const lines = quoteText[char];
+  if (!lines) return;
+  
+  console.log(lines[quoteShuffle]);
+  quoteShuffle = (quoteShuffle + 1) % lines.length;
+});
+
 
 
 
@@ -32,12 +50,12 @@ const quote = document.getElementById("audio");
 // # FIX VOLUME ON DORIAN AND GRIZZLY ##
 // #######################################
 function delayedAudio () {
-setTimeout(playAudio, 750);
-
-function playAudio () {
+  setTimeout(playAudio, 750);
   
-  quote.play();
-}
+  function playAudio () {
+    
+    quote.play();
+  }
 }
 
 if (deanID === "dean") {
@@ -57,7 +75,7 @@ else if (grizzlyID === "grizzly") {
 }
 
 else if (revenantID === "revenant") {
- delayedAudio();
+  delayedAudio();
 }
 
 else if (spidermanID === "spiderman") {
