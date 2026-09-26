@@ -80,7 +80,7 @@ body {
 }
 .graph button {
   align-self: center;
-  margin: 33;
+  margin-bottom:100px ;
 }
 #btn {
   width: fit-content;
