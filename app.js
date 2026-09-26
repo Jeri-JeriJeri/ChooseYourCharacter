@@ -11,7 +11,6 @@ const revanent = document.getElementById("revanent");
 
 const dean = document.getElementById("dean");
 
-const grizzly = document.getElementById("grizzly");
 
 
 gohan.addEventListener("mouseenter", () => {
@@ -61,14 +60,3 @@ dean.addEventListener("mouseleave", () => {
   lockedChar.src = lockedCharPNG;
   lockedChar.style.animation = "";
 })
-
-
-grizzly.addEventListener("mouseenter", () => {
-  lockedChar.src = "lockedChar/grizzly.png";
-  lockedChar.style.animation = "lockedChar-animation 2s";
-})
-grizzly.addEventListener("mouseleave", () => {
-  lockedChar.src = lockedCharPNG;
-  lockedChar.style.animation = "";
-})
-
