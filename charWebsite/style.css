@@ -62,9 +62,11 @@ body {
 
 .graph {
   grid-area: graph;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   animation: graph-animation 1.5s;
   animation-delay: 0.6s;
   opacity: 0;
@@ -72,15 +74,19 @@ body {
 
   
 }
+.graph h2 {
+  grid-column: 1 / 4;
+}
 .graph p {
-  align-self: center ; 
-  font-size: 1.5rem;
-  margin: auto;
+  grid-column: 1 / 4;
+  grid-row: 2;
   
+  font-size: 1.5rem;
+   
 }
 .graph button {
-  align-self: center;
-  margin-bottom:100px ;
+  grid-column: 1 / 4;
+  grid-row: 3;
 }
 #btn {
   width: fit-content;
@@ -88,12 +94,24 @@ body {
   border-radius: 7px;
   background-color: #008a8a ;
   border: 1px solid black;
-
 }
+#btn:hover {
+  animation: button 0.5s;
+  animation-fill-mode: forwards;
+  
+}
+#btn:active {
+  transform: translateY(4px);
+}
+#btn:focus {
+  animation: button 1s;
+  animation-fill-mode: forwards;
+}
+
 
 .accomps {
   grid-area: accomps;
-   padding-right: 0.8rem; 
+  padding-right: 0.8rem; 
 }
 .accomps h2 {
   animation: accomps-animation 1.5s;
@@ -101,7 +119,7 @@ body {
   opacity: 0;
   animation-fill-mode: forwards;
 }
- .accomps li {
+.accomps li {
   opacity: 0;
 } 
 .list-1 {
@@ -145,68 +163,84 @@ body {
 #### ANIMATIONS #####
 #################### */
 @keyframes info-animation {
- 0% {
+  0% {
     transform: translate(-20%);
     opacity: 0;}
-  50% {
-
-    opacity: 0.4;
+    50% {
+      
+      opacity: 0.4;
+    }
+    
+    100% {
+      transform: translate(0);
+      opacity: 1;
+    }
   }
-  
-    100% {
-    transform: translate(0);
-    opacity: 1;
+  @keyframes picture-animation {
+    0% {
+      transform: translate(20%);
+      opacity: 0;}
+      50% {
+        
+        opacity: 0.4;
+      }
+      
+      100% {
+        transform: translate(0);
+        opacity: 1;
+      }
     }
-}
-@keyframes picture-animation {
- 0% {
-    transform: translate(20%);
-    opacity: 0;}
-  50% {
-
-    opacity: 0.4;
-  }
-  
-    100% {
-    transform: translate(0);
-    opacity: 1;
-    }
-}
-@keyframes graph-animation {
- 0% {
-    transform: translate(-20%);
-    opacity: 0;}
-  50% {
-
-    opacity: 0.4;
-  }
-  
-    100% {
-    transform: translate(0);
-    opacity: 1;
-    }
-}
-@keyframes accomps-animation {
- 0% {
-    transform: translate(20%);
-    opacity: 0;}
-  50% {
-
-    opacity: 0.4;
-  }
-  
-    100% {
-    transform: translate(0);
-    opacity: 1;
-    }
-}
-
-@keyframes accomps-li-animation {
- 0% {
-    transform: translate(10%, -100%);
-    opacity: 0;}
-    100% {
-    transform: translate(0, 0);
-    opacity: 1;
-    }
-}
+    @keyframes graph-animation {
+      0% {
+        transform: translate(-20%);
+        opacity: 0;}
+        50% {
+          
+          opacity: 0.4;
+        }
+        
+        100% {
+          transform: translate(0);
+          opacity: 1;
+        }
+      }
+      @keyframes accomps-animation {
+        0% {
+          transform: translate(20%);
+          opacity: 0;}
+          50% {
+            
+            opacity: 0.4;
+          }
+          
+          100% {
+            transform: translate(0);
+            opacity: 1;
+          }
+        }
+        
+        @keyframes accomps-li-animation {
+          0% {
+            transform: translate(10%, -100%);
+            opacity: 0;}
+            100% {
+              transform: translate(0, 0);
+              opacity: 1;
+            }
+          }
+          @keyframes button {
+            0% {
+              width: 7%;
+              height: 2rem;
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+              border-radius: 7px;
+            }
+            
+            100% {
+              width: 11%;
+              height: 2.7rem;
+              box-shadow: 0 20px 30px rgba(0, 0, 0, 2);
+              border-radius: 30px;
+            }
+            
+          }
