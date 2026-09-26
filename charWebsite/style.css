@@ -41,6 +41,16 @@ body {
   padding-left: 1rem;
 
 }
+.home-btn {
+  grid-area: empty;
+  justify-self: center;
+  margin-top: 2rem;
+  animation: info-animation 0.5s ;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
 .picture{
   grid-area: picture;
   animation: picture-animation 1.5s;
@@ -71,7 +81,7 @@ body {
   animation-delay: 0.6s;
   opacity: 0;
   animation-fill-mode: forwards;
-
+  
   
 }
 .graph h2 {
@@ -82,12 +92,13 @@ body {
   grid-row: 2;
   
   font-size: 1.5rem;
-   
+  
 }
 .graph button {
   grid-column: 1 / 4;
   grid-row: 3;
 }
+/* ############# GENERATE BUTTON ###################### */
 #btn {
   width: fit-content;
   height: 2rem;
@@ -107,7 +118,21 @@ body {
   animation: button 1s;
   animation-fill-mode: forwards;
 }
-
+/* ############## HOME BUTTTONN ############### */
+#home-btn {
+  border-radius: 7px;
+  background-color: #008a8a ;
+  border: 1px solid black;
+  width: 3.7rem;
+  height: 2rem;
+}
+#home-btn:hover {
+  animation: home-btn 0.5s;
+  animation-fill-mode: forwards;
+}
+#home-btn:active {
+  transform: translateY(4px);
+}
 
 .accomps {
   grid-area: accomps;
@@ -243,4 +268,20 @@ body {
               border-radius: 30px;
             }
             
+          }
+          @keyframes home-btn {
+            0% {
+                        width: 4rem;
+                        height: 2rem;
+                        
+                        border-radius: 7px;
+                      }
+                      
+                      100% {
+                        width: 6rem;
+                        height: 2.7rem;
+                        box-shadow: 0 20px 30px rgba(0, 0, 0, 2);
+                        border-radius: 30px;
+                        
+                      }
           }
