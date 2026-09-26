@@ -39,38 +39,48 @@ fetch("quotes.json")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let char;
-let gettingCharVar = document.querySelector("h1").innerHTML;
-let test = gettingCharVar.toLowerCase().includes("revenant");
-if (test === true) {
+let gettingCharVar = document.querySelector("h1").innerHTML.toLowerCase();
+
+// Each CHAR
+let revenantQuote = gettingCharVar.includes("revenant");
+if (revenantQuote === true) {
+  char = gettingCharVar;
+   delayedAudio();
+  console.log(char);
+}
+
+let gohanQuote = gettingCharVar.includes("future gohan");
+if (gohanQuote === true) {
   char = gettingCharVar
-  console.log(char)
+   delayedAudio();
+  console.log(char);
+}
+
+let spidermanQuote = gettingCharVar.includes("spider-man");
+if (spidermanQuote === true) {
+  char = gettingCharVar;
+   delayedAudio();
+  console.log(char);
+}
+
+let dorianQuote = gettingCharVar.includes("dorian yates");
+if (dorianQuote === true) {
+  char = gettingCharVar;
+   delayedAudio();
+  console.log(char);
+}
+
+let deanQuote = gettingCharVar.includes("dean potter");
+if (deanQuote === true) {
+  char = gettingCharVar;
+   delayedAudio();
+  console.log(char);
 }
 
 
 
-function quoteLine(test) {
+/* function quoteLine(test) {
   test = char;
   test = test.toLowerCase();
   
@@ -79,40 +89,8 @@ function quoteLine(test) {
   quoteParagraph.innerText = `"${lines[quoteShuffle]}"`
   quoteShuffle = (quoteShuffle + 1) % lines.length;
 }
-
-
-
-btn.addEventListener("click", quoteLine)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* btn.addEventListener("click", (char) => {
-  char = revenantID
-  const lines = quoteText[char];
-  
-  console.log(lines[quoteShuffle]);
-  quoteShuffle = (quoteShuffle + 1) % lines.length;
-}); 
-
  */
-
-
-
+/* btn.addEventListener("click", quoteLine) */
 
 // ######################################
 // # FIX DELAY##########################
@@ -127,11 +105,11 @@ function delayedAudio () {
   }
 }
 
-if (deanID === "dean") {
+/* if (char === "dean potter") {
   delayedAudio();
 }
 
-else if (dorianID === "dorian") {
+else if (char === "dorian yates") {
   delayedAudio();
 }
 
@@ -151,5 +129,5 @@ else if (revenantID === "revenant") {
 else if (spidermanID === "spiderman") {
   delayedAudio();
 }
- 
+  */
 
