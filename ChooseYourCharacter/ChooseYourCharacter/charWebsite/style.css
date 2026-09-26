@@ -1,0 +1,287 @@
+body { 
+  background: radial-gradient(circle, #002424 0%, #000F0F 100%);
+  color: #68C7EC;  
+  font-family: "Cantarell", sans-serif;
+  overflow: hidden;
+  
+
+}
+
+.container {
+  width: 99dvw;
+  height: 98dvh; 
+  display: grid;
+  grid-template-columns: 1fr 250px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "info empty picture" "graph empty accomps";
+}
+.container h1 {
+  font-size: 3.5rem;
+}
+.container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.container p, li {
+  font-size: 1.3rem;
+}
+.container li {
+   margin-bottom: 2rem; 
+}
+
+.info {
+  grid-area: info;
+  animation: info-animation 1.5s;
+  animation-delay: 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  
+}
+.info, .graph {
+  padding-left: 1rem;
+
+}
+.home-btn {
+  grid-area: empty;
+  justify-self: center;
+  margin-top: 2rem;
+  animation: info-animation 0.5s ;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.picture{
+  grid-area: picture;
+  animation: picture-animation 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  align-items: center;
+  justify-self: center;
+}
+#pos-right-picture {
+  justify-self: right;
+  
+  
+}
+.picture img {
+  width: 1.2fr;
+  height: 40dvh;
+  border-radius: 20px;
+}
+
+.graph {
+  grid-area: graph;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  animation: graph-animation 1.5s;
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  
+  
+}
+.graph h2 {
+  grid-column: 1 / 4;
+}
+.graph p {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  
+  font-size: 1.5rem;
+  
+}
+.graph button {
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
+/* ############# GENERATE BUTTON ###################### */
+#btn {
+  width: fit-content;
+  height: 2rem;
+  border-radius: 7px;
+  background-color: #008a8a ;
+  border: 1px solid black;
+}
+#btn:hover {
+  animation: button 0.5s;
+  animation-fill-mode: forwards;
+  
+}
+#btn:active {
+  transform: translateY(4px);
+}
+#btn:focus {
+  animation: button 1s;
+  animation-fill-mode: forwards;
+}
+/* ############## HOME BUTTTONN ############### */
+#home-btn {
+  border-radius: 7px;
+  background-color: #008a8a ;
+  border: 1px solid black;
+  width: 3.7rem;
+  height: 2rem;
+}
+#home-btn:hover {
+  animation: home-btn 0.5s;
+  animation-fill-mode: forwards;
+}
+#home-btn:active {
+  transform: translateY(4px);
+}
+
+.accomps {
+  grid-area: accomps;
+  padding-right: 0.8rem; 
+}
+.accomps h2 {
+  animation: accomps-animation 1.5s;
+  animation-delay: 0.9s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.accomps li {
+  opacity: 0;
+} 
+.list-1 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+.list-2 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  
+}
+.list-3 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
+.list-4 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 2.1s;
+  animation-fill-mode: forwards;
+}
+.list-5 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 2.4s;
+  animation-fill-mode: forwards;
+}
+.list-6 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 2.7s;
+  animation-fill-mode: forwards;
+}
+.list-7 {
+  animation: accomps-li-animation 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+/* ##################
+#### ANIMATIONS #####
+#################### */
+@keyframes info-animation {
+  0% {
+    transform: translate(-20%);
+    opacity: 0;}
+    50% {
+      
+      opacity: 0.4;
+    }
+    
+    100% {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes picture-animation {
+    0% {
+      transform: translate(20%);
+      opacity: 0;}
+      50% {
+        
+        opacity: 0.4;
+      }
+      
+      100% {
+        transform: translate(0);
+        opacity: 1;
+      }
+    }
+    @keyframes graph-animation {
+      0% {
+        transform: translate(-20%);
+        opacity: 0;}
+        50% {
+          
+          opacity: 0.4;
+        }
+        
+        100% {
+          transform: translate(0);
+          opacity: 1;
+        }
+      }
+      @keyframes accomps-animation {
+        0% {
+          transform: translate(20%);
+          opacity: 0;}
+          50% {
+            
+            opacity: 0.4;
+          }
+          
+          100% {
+            transform: translate(0);
+            opacity: 1;
+          }
+        }
+        
+        @keyframes accomps-li-animation {
+          0% {
+            transform: translate(10%, -100%);
+            opacity: 0;}
+            100% {
+              transform: translate(0, 0);
+              opacity: 1;
+            }
+          }
+          @keyframes button {
+            0% {
+              width: 7%;
+              height: 2rem;
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+              border-radius: 7px;
+            }
+            
+            100% {
+              width: 11%;
+              height: 2.7rem;
+              box-shadow: 0 20px 30px rgba(0, 0, 0, 2);
+              border-radius: 30px;
+            }
+            
+          }
+          @keyframes home-btn {
+            0% {
+                        width: 4rem;
+                        height: 2rem;
+                        
+                        border-radius: 7px;
+                      }
+                      
+                      100% {
+                        width: 6rem;
+                        height: 2.7rem;
+                        box-shadow: 0 20px 30px rgba(0, 0, 0, 2);
+                        border-radius: 30px;
+                        
+                      }
+          }

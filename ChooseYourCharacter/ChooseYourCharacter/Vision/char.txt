@@ -1,0 +1,27 @@
+1. spooperman- U are spiderman act like it 
+
+2.Dorian Yates - Im here charging through the snow, and they are gna pay for that
+
+3. Dean potter - ...
+
+4. Revanent - that little voice saying there is still hope
+
+5. Gohan - Fight u? i wanna kill you
+
+6.Grizzly - AAAHHH
+
+
+///////////
+Onlick: play audio
+
+////////////////
+Anchor link:
+Info for the char
+Char pic
+Some kind of graph api idk :C
+
+/////////
+backend del: 
+1. Google trends API - Track how many times has it been googled for example tday/1month/year/all time
+
+2.
