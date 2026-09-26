@@ -1,4 +1,4 @@
-let deanID = document.querySelector("#dean");
+let deanID = document.querySelector("dean");
 deanID = "dean";
 
 let dorianID = document.querySelector("dorian");
@@ -22,7 +22,12 @@ spidermanID = "spiderman"
 
 const quote = document.getElementById("audio");
 
-let quoteShuffle = 0;
+const quoteParagraph = document.getElementById("quoteParagraph")
+
+// ####################################
+// ##### QUOTE FETCHER    ########
+//################################
+ let quoteShuffle = 0;
 let quoteText = {};
 const btn = document.getElementById("btn");
 
@@ -31,16 +36,80 @@ fetch("quotes.json")
 .then(data => {
   quoteText = data;
 });
-btn.addEventListener("click", (char) => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let char;
+let gettingCharVar = document.querySelector("h1").innerHTML;
+let test = gettingCharVar.toLowerCase().includes("revenant");
+if (test === true) {
+  char = gettingCharVar
+  console.log(char)
+}
+
+
+
+function quoteLine(test) {
+  test = char;
+  test = test.toLowerCase();
+  
+  const lines = quoteText[test];
+
+  quoteParagraph.innerText = `"${lines[quoteShuffle]}"`
+  quoteShuffle = (quoteShuffle + 1) % lines.length;
+}
+
+
+
+btn.addEventListener("click", quoteLine)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* btn.addEventListener("click", (char) => {
   char = revenantID
   const lines = quoteText[char];
-  if (!lines) return;
   
   console.log(lines[quoteShuffle]);
   quoteShuffle = (quoteShuffle + 1) % lines.length;
-});
+}); 
 
-
+ */
 
 
 
@@ -76,6 +145,7 @@ else if (grizzlyID === "grizzly") {
 
 else if (revenantID === "revenant") {
   delayedAudio();
+  
 }
 
 else if (spidermanID === "spiderman") {
